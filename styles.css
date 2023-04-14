@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    background: white;
+}
+
+#nav-bar .nav-link {
+    padding-right: 10px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+#nav-bar .nav-link:hover {
+    color: blue;
+}
+
+#head-component {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5rem;
+    margin-top: 6rem;
+}
+
+#head-component h1 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+#head-component #email {
+    padding: 8px;
+    border-radius: 5px;
+    width: 250px;
+}
+
+#form #submit {
+    padding: 10px;
+    width: 180px;
+    background-color: rgb(225, 192, 41);
+    font-size: 1.5rem;
+    border: none;
+}
+
+#features {
+    align-items: center;
+    margin: auto;
+    width: 50%;
+}
+
+#features div {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+#features div i {
+    color: red;
+    font-size: 2.5rem;
+}
+
+#features span {
+    font-size: 1.2rem;
+}
+
+#How-it-works {
+    display: block;
+    align-items: center;
+    margin: auto;
+    width: 40%;
+}
+
+#pricing .product {
+    width: 300px;
+    height: 300px;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    text-align: center;
+}
+
+#pricing {
+    margin: 50px auto;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+#pricing .product div {
+    background: rgb(173, 173, 173);
+    padding: 15px;
+}
+
+#pricing .product button {
+    padding: 10px;
+    font-size: 1.2rem;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(14, 14, 14);
+    color: white;
+    bottom: 10px;
+}
+
+#pricing .product h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#pricing .product p {
+    margin-bottom: 90px;
+}
+
+#pricing .product button:hover {
+    background: aqua;
+    color: black;
+}
+
+footer {
+    background: rgb(50, 50, 50);
+    width: 100%;
+    color: white;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+}
+
+footer p {
+    margin-top: 30px;
+}
+
+@media only screen and ((max-width: 900px)) {
+    #pricing {
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 10px;
+        gap: 30px;
+    }
+}
+
+@media only screen and ((max-width: 600px)) {
+    #pricing .product {
+        width: 200px;
+        height: 200px;
+    }
+    #pricing .product div {
+        padding: 8px;
+    }
+    #pricing .product button {
+        padding: 8px;
+        font-size: 0.7rem;
+        width: 120px;
+        border: none;
+        border-radius: 10px;
+        background-color: rgb(14, 14, 14);
+        color: white;
+    }
+    #pricing .product p {
+        margin-bottom: 45px;
+    }
+    #pricing .product h3 {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    #How-it-works iframe {
+        width: 250px;
+        height: 150px;
+    }
+    #How-it-works {
+        width: 60%;
+    }
+    #features div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    #features div i {
+        font-size: 1rem;
+    }
+    #features span {
+        font-size: 0.8rem;
+    }
+    #features {
+        align-items: center;
+        margin: auto;
+    }
+    #head-component #email {
+        padding: 5px;
+        width: 200px;
+    }
+    #form #submit {
+        padding: 8px;
+        width: 150px;
+        font-size: 1rem;
+    }
+}
